@@ -1,9 +1,9 @@
 version: '3'
 services:
   excalidraw:
-    image: excalidraw/excalidraw:latest
-    restart: always
+    build: .
     ports:
-      - "3000:80"
+      - "80:80"
     environment:
       - NODE_ENV=production
+    restart: always
